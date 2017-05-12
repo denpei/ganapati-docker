@@ -4,8 +4,8 @@ MAINTAINER Dennis Peitersen
 RUN echo "deb http://archive.ubuntu.com/ubuntu precise main universe" > /etc/apt/sources.list
 RUN apt-get update
 
-RUN apt install git
-RUN apt install mvn
+RUN apt-get install -y git
+RUN apt-get install -y mvn
 
 RUN git clone https://github.com/denpei/ganapati-api.git
 RUN cd ganapati-api
